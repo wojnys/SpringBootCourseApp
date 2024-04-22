@@ -1,0 +1,4 @@
+- what is repository in spring boot ?
+    - It takes and Entity and type of primary key of that entity
+    - repository is interface which extends JpaRepository interface
+    - we will communicate through this repository with database
