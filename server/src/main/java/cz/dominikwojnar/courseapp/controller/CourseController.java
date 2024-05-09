@@ -57,21 +57,16 @@ public class CourseController {
         return new ResponseEntity<>("Was successfully created", HttpStatus.OK);
     }
     // with a mmaper tutorial
-    @GetMapping("/course-tutorial/{id}")
+    @GetMapping("/course/{id}")
     ResponseEntity<CourseDto> getCourse(@PathVariable Long id) {
         CourseEntity course = courseService.getCourseById(id);
         CourseDto courseDto = courseMapper.mapTo(course);
         return new ResponseEntity<>(courseDto, HttpStatus.OK);
     }
     // with a mmaper tutorial
-    @GetMapping("/course/{id}")
-    CourseEntity getCourseById(@PathVariable  Long id) {
-        return courseService.getCourseById(id);
-    }
-    // with a mmaper tutorial
     @PutMapping("/course/{id}")
     ResponseEntity<String> updateCourse(@RequestBody CourseEntity newCourse, @PathVariable Long id) {
-         courseService.updateCourse(newCourse, id);
+        courseService.updateCourse(newCourse, id);
         return new ResponseEntity<>("Was successfully edited", HttpStatus.OK);
     }
 }

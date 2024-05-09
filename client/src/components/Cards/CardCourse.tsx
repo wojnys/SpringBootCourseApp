@@ -19,7 +19,7 @@ function CardCourse({description, price, id, topicName, topicId, name, index}: C
 
     const navigate = useNavigate();
     const courseDetail = () => {
-        navigate(`admin/course/${id}`);
+        navigate(`/admin/course/${id}`);
     }
     return (
         <Card sx={{width: 345, height: 300}} onClick={courseDetail}>

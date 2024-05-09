@@ -32,15 +32,6 @@ public class CourseService {
         return coursesEntity;
     }
 
-//    public List<CourseDto> getAllCourses() {
-//        List<CourseEntity> courseEntity =  courseRepository.findAll();
-//
-//        return courseEntity.stream()
-//                .map(CourseDtoMapper::maptoCourseDto)
-//                .collect(Collectors.toList());
-//    }
-
-
     public void updateCourse(CourseEntity newCourse, Long id) {
         courseRepository.findById(id)
                 .map(course -> {

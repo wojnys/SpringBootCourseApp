@@ -8,6 +8,7 @@ import CreateCoursePage from "./pages/Admin/Course/CreateCoursePage/CreateCourse
 import AllCoursesPage from "./pages/Admin/Course/AllCoursesPage/AllCoursesPage";
 import MainUserPage from "./pages/Admin/User/MainUserPage/MainUserPage";
 import AllUsersPage from "./pages/Admin/User/AllUsersPage/AllUsersPage";
+import CourseDetail from "./pages/Admin/Course/CourseDetail/CourseDetail";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/admin/course" element={<MainCoursePage/>}/>
                     <Route path="/admin/course/create" element={<CreateCoursePage/>}/>
                     <Route path="/admin/course/all" element={<AllCoursesPage/>}/>
+                    <Route path="/admin/course/:courseId" element={<CourseDetail/>}/>
 
                     /* User routes */
                     <Route path="/admin/user" element={<MainUserPage/>}/>

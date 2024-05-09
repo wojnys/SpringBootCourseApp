@@ -7,28 +7,14 @@ import {BellIcon} from '@heroicons/react/24/outline'
 const navigation = [
     {
         name: "Course",
-        links: [{name: "Main Page", href: "/admin/course"}, {
+        links: [{
             name: "Create",
             href: "/admin/course/create"
         }, {name: "View all courses", href: "/admin/course/all"}]
     },
     {
         name: "Users",
-        links: [{name: "Main Page", href: "/admin/user"}, {name: "View all users", href: "/admin/user/all"}]
-    },
-    {
-        name: "Topics",
-        links: [{name: "Main Page", href: "/admin/topic"}, {
-            name: "Create",
-            href: "/admin/topic/create"
-        }, {name: "View all topics", href: "/admin/topic/all"}]
-    },
-    {
-        name: "Pricing",
-        links: [{name: "Main Page", href: "/admin/pricing"}, {
-            name: "Create",
-            href: "/admin/pricing/create"
-        }, {name: "View all prices", href: "/admin/pricing/all"}]
+        links: [{name: "View all users", href: "/admin/user/all"}]
     },
 ]
 
